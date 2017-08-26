@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cook My Meal : Unique Recipe Search Engine</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Unique Recipe Search Engine to Search Recipe Over the internet" />
+    <meta name="keywords" content="recipe, custome recipe, cookmymeal, healty recipe, indian recipe "/>	
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<script src="libs/jquery/1.4.2/jquery.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div id="page" class="centered">
+	<div id="logo" style="width:40%;margin: 0 auto;">
+		<img style="width:100px;" src="img/cook_my_meal_logo.gif" />
+	</div>
+	<div id="resultImg" style="display:none;float:left;margin-top:40px;margin-right:20px">
+		<img style="width:100px;" src="img/recipe.jpg" />
+	</div>
+	<div style="float:left;margin-top:20px">
+		<form method="post" id="searchForm" name="searchForm">
+			<fieldset>
+				<input id="s" type="text" />
+				<input type="submit" value="Submit" id="submitButton" />
+				<div>
+					<div  style="float:left;">
+						<label><strong>Category</strong></label><br>
+						<input type="checkbox" name="jain" value="jain" id="chkJain" checked />
+						<label for="chkJain" id="jainLabel">Jain</label><br>
+						<input type="checkbox" name="veg" value="veg" id="chkVeg" checked />
+						<label for="chkVeg" id="vegLabel">Vegetarian</label><br>
+						<input type="checkbox" name="nonVeg" value="nonVeg" id="chkNonVeg" checked />
+						<label for="chkNonVeg">Non-Vegetarian</label>
+					</div>
+					<div style="float:left;">
+						<label><strong>Meal Type</strong></label><br>
+						<input type="checkbox" name="soups" id="chkSoups" checked />
+						<label for="chkSoups">Soups</label><br>
+						<input type="checkbox" name="salads" id="chkSalads" checked />
+						<label for="chkSalads">Salads</label><br>
+						<input type="checkbox" name="subzis" id="chkSubzis" checked />
+						<label for="chkSubzis">Subzis</label><br>
+						<input type="checkbox" name="breakfast" id="chkBreakfast" checked />
+						<label for="chkBreakfast">Breakfast</label><br>
+						<input type="checkbox" name="lunch" id="chkLunch" checked />
+						<label for="chkLunch">Lunch</label><br>
+						<input type="checkbox" name="dinner" id="chkDinner" checked />
+						<label for="chkDinner">Dinner</label>
+					</div>
+					<div style="float:left;">
+						<label><strong>Health</strong></label><br>
+						<input type="checkbox" name="healty" id="chkHealthy" checked />
+						<label for="chkHealthy">Healthy *****</label><br>
+						<input type="checkbox" name="lowCalorie" id="chkLowCalorie" checked />
+						<label for="chkLowCalorie">Low calorie</label><br>
+						<input type="checkbox" name="diabetic" id="chkDiabetic" checked />
+						<label for="chkDiabetic">Diabetic Recipes</a></li><br>
+						<input type="checkbox" name="healthyHeart" id="chkHealthyHeart" checked />
+						<label for="chkHealthyHeart">Healthy Heart</label><br>
+						<input type="checkbox" name="hbp" id="chkhbp" checked />
+						<label for="chkhbp">High Blood Pressure</label><br>
+						<input type="checkbox" name="pregnancy" id="chkPregnancy" checked />
+						<label for="chkPregnancy">Pregnancy Recipes</label><br>
+						<input type="checkbox" name="zeroOil" id="chkZeroOil" checked />
+						<label for="chkZeroOil">Zero Oil</label>
+					</div>
+					<div style="float:left">
+						<label><strong>Nutrients</strong></label><br>
+						<input type="checkbox" name="ironRich" id="chkIronRich" checked />
+						<label for="chkIronRich">Iron Rich</label><br>
+						<input type="checkbox" name="calciumRich" id="chkCalciumRich" checked />
+						<label for="chkCalciumRich">Calcium Rich</label>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	</div>
+	<div id="resultsDiv"></div>
+<!-- It would be great if you leave the link back to the tutorial. Thanks!
+<p class="credit"><a href="http://tutorialzine.com/2010/09/google-powered-site-search-ajax-jquery/">Powered by Tzine &amp; Google</a></p>
+    -->
+</body>
+</html>
